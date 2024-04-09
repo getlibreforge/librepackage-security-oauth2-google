@@ -39,6 +39,7 @@ export class OAuth2GoogleCallbackHandler extends AbstractCallbackHandler {
     snackbar: any,
     router: any
   ) {
+    console.warn('/oauth2/google received. Handling redirect from Google');
 
     if (!!appState.sharedState.token) {
       console.warn('Token is not null, skipping...');
